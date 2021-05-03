@@ -10,7 +10,7 @@ class TPQueue {
     int size;
     int begin, end;
     int count;
- 
+
  public:
     TPQueue() :
         size(100),
@@ -31,8 +31,9 @@ class TPQueue {
                     arr[i] = item;
                 }
             }
-        } else
+        } else {
             arr[begin] = item;
+        }
         end++;
         count++;
         if (end > size)
